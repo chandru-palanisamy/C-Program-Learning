@@ -1,9 +1,10 @@
 #include <stdio.h>
-
 int main()
 {
-    int a=1;
+    int a=0;
     int b=0;
+    printf("%d",a&&b);
     printf("%d",a||b);
+    
     return 0;
 }

@@ -2,18 +2,23 @@
 
 void main ()
 {
-  int n,true ,rev=0;
+  int n,note,rev=0;
   printf("enter n:");
-  scanf("%d",&n);
-  true=n;
-  while(true>0)
-  {
+scanf("%d",&n);
+note=n;
+while(note>0)
+{
     rev=rev*10;
-    rev=rev+(true%10);
-    true/=10;
-
-  } 
-  printf("revasical:%d",rev);
+    rev=rev+(note%10);
+    note/=10;
 
 }
-    
+  if(n==rev)
+  {
+    printf ("is a palindrome");
+
+  }
+  else
+  printf("not a palindrome");
+
+}
